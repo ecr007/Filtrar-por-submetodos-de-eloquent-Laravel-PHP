@@ -7,3 +7,9 @@ $students = User::whereHas(
         $q->where('name', 'Teacher');
     }
 )->get();
+
+// Se puede usar With para traer relaciones por metodos
+
+->with("categories")
+->get()
+```
